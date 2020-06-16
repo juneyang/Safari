@@ -44,7 +44,11 @@ export default class Maps extends Taro.Component<IProps, IState>{
         this.getGps()
         this.getMaps()
         this.MapContext = Taro.createMapContext('MyMap')
-        Taro.onLocationChange( this.locationChangeFn.bind(this) )
+        let hasStarted = Taro.getStorageSync('hasStarted')
+        if( !hasStarted ){
+            Taro.onLocationChange( this.locationChangeFn.bind(this) )
+            Taro.setStorageSync('hasStarted', true)
+        }
         // this.initLocationMonit()
     }
 
@@ -74,7 +78,7 @@ export default class Maps extends Taro.Component<IProps, IState>{
     }
 
     destoryLocationMonit(){
-        Taro.offLocationChange(  this.locationChangeFn.bind(this)  )
+        Taro.offLocationChange( this.locationChangeFn.bind(this) )
         // Taro.offLocationChange( this.locationChangeFn.bind(this) )
         this.setState({
             isSafaring: false
@@ -177,9 +181,12 @@ export default class Maps extends Taro.Component<IProps, IState>{
         })
     }
 
-    onStartSafaring() {
-        this.destoryLocationMonit()
-        this.initLocationMonit()
+    onStartSafaring( isSafaring ) {
+        if( !!isSafaring ){
+            this.destoryLocationMonit()
+        } else {
+            this.initLocationMonit()
+        }
     }
 
     render(){
@@ -218,13 +225,10 @@ export default class Maps extends Taro.Component<IProps, IState>{
                     bindregionchange="regionchange" 
                     show-location 
                     style="width: 100%; height: 300px;"></map> */}
-                {
-                    !isSafaring && 
-                    <CoverView 
-                        onClick={this.onStartSafaring.bind(this)} 
-                        className='Map__Start'
-                    >开始漫游</CoverView>
-                }
+                <CoverView 
+                    onClick={this.onStartSafaring.bind(this, isSafaring)} 
+                    className='Map__Start'
+                >{isSafaring? '停止': '开始漫游'}</CoverView>
             </View>
         )
     }
