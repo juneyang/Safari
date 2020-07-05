@@ -44,11 +44,11 @@ export default class Maps extends Taro.Component<IProps, IState>{
         this.getGps()
         this.getMaps()
         this.MapContext = Taro.createMapContext('MyMap')
-        let hasStarted = Taro.getStorageSync('hasStarted')
-        if( !hasStarted ){
-            Taro.onLocationChange( this.locationChangeFn.bind(this) )
-            Taro.setStorageSync('hasStarted', true)
-        }
+        // if( !hasStarted ){
+        //     Taro.onLocationChange( this.locationChangeFn.bind(this) )
+        //     Taro.setStorageSync('hasStarted', true)
+        // }
+        Taro.onLocationChange( this.locationChangeFn.bind(this) )
         // this.initLocationMonit()
     }
 

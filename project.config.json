@@ -11,11 +11,20 @@
 		"preloadBackgroundData": false,
 		"minified": false,
 		"newFeature": true,
-		"autoAudits": false,
 		"coverView": true,
+		"autoAudits": false,
 		"showShadowRootInWxmlPanel": true,
 		"scopeDataCheck": false,
-		"useCompilerModule": true
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		},
+		"useCompilerModule": false,
+		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
 	"simulatorType": "wechat",
