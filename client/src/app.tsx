@@ -22,7 +22,8 @@ class App extends Component {
   config: Config = {
     pages: [
       'pages/index/index',
-      'pages/index/math',
+      'pages/quiz/index',
+      'pages/quiz/exams/grids',
       'pages/map/index'
     ],
     window: {

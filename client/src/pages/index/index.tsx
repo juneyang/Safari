@@ -33,6 +33,12 @@ export default class Index extends Component {
     })
   }
 
+  onClickMath() {
+    Taro.navigateTo({
+      url: '/pages/quiz/index'
+    })
+  }
+
   render () {
     return (
       <View className='Home'>
@@ -41,6 +47,7 @@ export default class Index extends Component {
           打开地图，开上车，漫游在地图上
         </View>
         <View className='Home__Button'>
+          <Button onClick={this.onClickMath.bind(this)}>答题</Button>
           <Button onClick={this.onClickSafari.bind(this)}>进入地图</Button>
         </View>
       </View>

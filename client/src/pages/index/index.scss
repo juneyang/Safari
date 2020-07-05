@@ -19,8 +19,11 @@ $b64-icon-spotbg1: #{ $b64-png + $spotbg1 };
         position: fixed;
         bottom: 120px;
         text-align: center;
-        width: 100vw;
+        width: 80vw;
+        left: 10vw;
+        right: 10vw;
         button{
+            display: block;
             background: #E2342E;
             height: 90px;
             line-height: 90px;
@@ -29,53 +32,7 @@ $b64-icon-spotbg1: #{ $b64-png + $spotbg1 };
             font-size: 30px;
             text-align: center;
             padding: 0 80px;
-            display: inline-block;
-        }
-    }
-}
-
-.HomeQuiz{
-    margin-top: 40px;
-    &__Main{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    &__Block{
-        background: #242424;
-        border-radius: 30px;
-        width: 200px;
-        height: 200px;
-        margin-bottom: 30px;
-        line-height: 200px;
-        font-size: 120px;
-        text-align: center;
-        &--Input{
-            width: 100%;
-            height: 100%;
-            background: #666;
-            border: 1px solid #fff;
-            box-sizing: border-box;
-            border-radius: 30px;
-        }
-        input{
-            width: 200px;
-            height: 200px;
-            line-height: 200px;
-            font-size: 120px;
-        }
-    }
-    &__Button{
-        display: flex;
-        margin: 40px;
-        button{
-            display: block;
-            background: #F3B42F;
-            border-radius: 14px;
-            color: #fff;
-            text-align: center;
-            font-size: 28px;
+            margin-bottom: 20px;
         }
     }
 }

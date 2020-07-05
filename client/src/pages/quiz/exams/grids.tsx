@@ -1,11 +1,10 @@
 import Taro, { Component, Config } from '@tarojs/taro'
 import { View, Text, Button, Input, Image } from '@tarojs/components'
-import './index.scss'
+import '../quiz.scss'
 
 import { shallowEqualArrays } from 'shallow-equal'
 
-import Login from '../../components/login/index.weapp'
-import { sleep } from '../../utils/utils'
+import { sleep } from '../../../utils/utils'
 
 interface IProps {
   [keyname: string]: any
@@ -15,8 +14,8 @@ interface IState {
 }
 
 
-import IMAGE_CORRECT from '../../assets/correct.jpg'
-import IMAGE_WRONG from '../../assets/wrong.jpg'
+import IMAGE_CORRECT from '../../../assets/correct.jpg'
+import IMAGE_WRONG from '../../../assets/wrong.jpg'
 
 export default class Index extends Component<IProps, IState>{ 
 

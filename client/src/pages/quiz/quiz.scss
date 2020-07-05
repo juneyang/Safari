@@ -1,0 +1,104 @@
+.Quiz{
+
+}
+
+.HomeQuiz{
+    margin-top: 40px;
+    &__Main{
+        text-align: center;
+    }
+    &__Blank,
+    &__Block{
+        display: inline-block;
+        vertical-align: top;
+        border: 1px solid #fff;
+        width: 200px;
+        height: 200px;
+        line-height: 200px;
+        font-size: 120px;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 1px;
+        margin: -1px 0 0 -1px;
+        overflow: hidden;
+        image{
+            width: 100%;
+        }
+        &--Input{
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            background: #2d2d2d;
+        }
+        &.correct{
+            .HomeQuiz__Block--Input{
+                border-color: rgb(24, 177, 24);
+            }
+        }
+        &.wrong{
+            .HomeQuiz__Block--Input{
+                background: rgba(225,52,46,.9);
+                border-color: #E2342E;
+            }
+        }
+        input{
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            font-size: 120px;
+        }
+    }
+    &__Blank{
+        background: none;
+        border: none;
+    }
+    &__Button{
+        display: flex;
+        margin: 40px 80px;
+        button{
+            display: block;
+            background: #F3B42F;
+            color: #fff;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            height: 96px;
+            line-height: 96px;
+            border-radius: 30px;
+        }
+        &--Generate{
+            margin-left: 30px;
+        }
+    }
+    &__Check{
+        flex: 1;
+        button{
+            background: rgb(24, 177, 24);
+            color: #fff;
+            height: 96px;
+            line-height: 96px;
+            border-radius: 96px;
+        }
+    }
+    &__Image{
+        text-align: center;
+        image{
+            width: 400px;
+            height: 400px;
+        }
+    }
+}
+
+.Quiz{
+    padding: 60px;
+    &__Item{
+        font-size: 40px;
+        background: #242424;
+        border-radius: 30px;
+        border: 1px solid #666;
+        height: 200px;
+        line-height: 200px;
+        padding-left: 60px;
+        box-sizing: border-box;
+    }
+}

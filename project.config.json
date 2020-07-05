@@ -66,6 +66,12 @@
 					"pathName": "pages/index/math",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "数学",
+					"pathName": "pages/index/math",
+					"scene": null
 				}
 			]
 		}
