@@ -57,6 +57,14 @@
 					"id": -1,
 					"name": "maps",
 					"pathName": "pages/map/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "quiz",
+					"pathName": "pages/index/math",
+					"query": "",
 					"scene": null
 				}
 			]
