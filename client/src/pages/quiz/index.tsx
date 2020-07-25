@@ -41,6 +41,9 @@ export default class Index extends Component<IProps, IState>{
             <Navigator className='Quiz__Item' url={'/pages/quiz/exams/grids'}>
                 横竖格子
             </Navigator>
+            <Navigator className='Quiz__Item' url={'/pages/quiz/exams/fillblank'}>
+                填空
+            </Navigator>
         </View>
       </View>
     )

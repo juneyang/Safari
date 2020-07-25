@@ -24,6 +24,7 @@ class App extends Component {
       'pages/index/index',
       'pages/quiz/index',
       'pages/quiz/exams/grids',
+      'pages/quiz/exams/fillblank',
       'pages/map/index'
     ],
     window: {

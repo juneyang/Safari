@@ -156,7 +156,7 @@ export default class Index extends Component<IProps, IState>{
         }
         {
           !!showResult && 
-          <View className='HomeQuiz__Image'>
+          <View className='QuizResult__Image'>
               <Image src={allCorrect ? IMAGE_CORRECT : IMAGE_WRONG} mode='aspectFill' />
           </View>
         }

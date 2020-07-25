@@ -1,5 +1,35 @@
 .Quiz{
-
+    &__Item{
+        margin-bottom: 40px;
+    }
+    &__Button{
+        display: flex;
+        margin: 40px 80px;
+        button{
+            display: block;
+            background: #F3B42F;
+            color: #fff;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            height: 96px;
+            line-height: 96px;
+            border-radius: 30px;
+        }
+        &--Generate{
+            margin-left: 30px;
+        }
+    }
+    &__Check{
+        flex: 1;
+        button{
+            background: rgb(24, 177, 24);
+            color: #fff;
+            height: 96px;
+            line-height: 96px;
+            border-radius: 96px;
+        }
+    }
 }
 
 .HomeQuiz{
@@ -80,13 +110,6 @@
             border-radius: 96px;
         }
     }
-    &__Image{
-        text-align: center;
-        image{
-            width: 400px;
-            height: 400px;
-        }
-    }
 }
 
 .Quiz{
@@ -100,5 +123,52 @@
         line-height: 200px;
         padding-left: 60px;
         box-sizing: border-box;
+    }
+}
+
+.FillBlank{
+    &__Main{
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 200px;
+    }
+    &__Block{
+        font-size: 80px;
+        &--Input{
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            background: #2d2d2d;
+        }
+        &.correct{
+            .HomeQuiz__Block--Input{
+                border-color: rgb(24, 177, 24);
+            }
+        }
+        &.wrong{
+            .HomeQuiz__Block--Input{
+                background: rgba(225,52,46,.9);
+                border-color: #E2342E;
+            }
+        }
+        input{
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            font-size: 80px;
+            text-align: center;
+        }
+    }
+    &__Add{
+        font-size: 100px;
+    }
+}
+.QuizResult__Image{
+    text-align: center;
+    image{
+        width: 400px;
+        height: 400px;
     }
 }
