@@ -1,86 +1,87 @@
 {
-	"miniprogramRoot": "client/dist/",
-	"cloudfunctionRoot": "cloud/functions/",
-	"projectname": "Safari",
-	"description": "",
-	"appid": "wx6e1800781f77cfc2",
-	"setting": {
-		"urlCheck": true,
-		"es6": false,
-		"postcss": false,
-		"preloadBackgroundData": false,
-		"minified": false,
-		"newFeature": true,
-		"coverView": true,
-		"autoAudits": false,
-		"showShadowRootInWxmlPanel": true,
-		"scopeDataCheck": false,
-		"checkInvalidKey": true,
-		"checkSiteMap": true,
-		"uploadWithSourceMap": true,
-		"babelSetting": {
-			"ignore": [],
-			"disablePlugins": [],
-			"outputPath": ""
-		},
-		"useCompilerModule": false,
-		"userConfirmedUseCompilerModuleSwitch": false
-	},
-	"compileType": "miniprogram",
-	"simulatorType": "wechat",
-	"simulatorPluginLibVersion": {},
-	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
-	"condition": {
-		"search": {
-			"current": -1,
-			"list": []
-		},
-		"conversation": {
-			"current": -1,
-			"list": []
-		},
-		"plugin": {
-			"current": -1,
-			"list": []
-		},
-		"game": {
-			"list": []
-		},
-		"gamePlugin": {
-			"current": -1,
-			"list": []
-		},
-		"miniprogram": {
-			"current": -1,
-			"list": [
-				{
-					"id": -1,
-					"name": "maps",
-					"pathName": "pages/map/index",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": 1,
-					"name": "quiz",
-					"pathName": "pages/index/math",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "数学",
-					"pathName": "pages/index/math",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "填空",
-					"pathName": "pages/quiz/exams/fillblank",
-					"scene": null
-				}
-			]
-		}
-	}
+  "miniprogramRoot": "client/dist/",
+  "cloudfunctionRoot": "cloud/functions/",
+  "projectname": "Safari",
+  "description": "",
+  "appid": "wx6e1800781f77cfc2",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "postcss": false,
+    "preloadBackgroundData": false,
+    "minified": false,
+    "newFeature": true,
+    "coverView": true,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "useIsolateContext": true,
+    "useCompilerModule": false,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true
+  },
+  "compileType": "miniprogram",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+  "condition": {
+    "search": {
+      "list": []
+    },
+    "conversation": {
+      "list": []
+    },
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "maps",
+          "pathName": "pages/map/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 1,
+          "name": "quiz",
+          "pathName": "pages/index/math",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "数学",
+          "pathName": "pages/index/math",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "填空",
+          "pathName": "pages/quiz/exams/fillblank",
+          "scene": null
+        }
+      ]
+    }
+  }
 }
